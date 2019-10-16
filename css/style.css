@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+
+header{
+    height: 230px;
+    padding: 20px 0 70px 0;
+    background-image: url(../img/huntington.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+*{
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+.summary a, .preamble a, .explanation a, .participation a, .benefits a, .requirements a{
+    color: black
+}
+a:hover, a:focus{
+    text-decoration: underline;
+}
+
+h1{
+    font-family: Roboto;
+    text-shadow: 5px 5px black;
+    font-size: 50px
+}
+
+h2 {
+    font-family: Satisfy;
+    background: url(../img/zen.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 15px;
+}
+[role=article]{
+    font-family: IBM Plex Mono;
+    font-size: 11px;
+}
+
+.requirements p, .benefits p, .explanation p, .preamble p, .summary p {
+    padding: 0 70px 0 70px;
+}
+
+
+h3{
+    font-weight: 700;
+    margin-top: 0;
+    color: black;
+    padding: 0 70px 0 70px;
+}
+
+.summary, .preamble, .explanation{
+    padding-bottom: 10px;
+}
+.participation, .benefits, .zen-resources{
+    background-attachment: scroll, scroll, fixed;
+    background-image: url(../img/bamboo.png);
+    background-color: rgba(70, 141, 60, 0.5);
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+    
+   
+    
+}
+.participation{
+    padding: 3em;
+    padding-left: 6em;
+    margin-top: 3em;
+    color: white
+}
+.participation h3{
+    padding-left: 0;
+}
+
+.benefits{
+    padding-bottom: 3em;
+    margin-bottom: 3em;
+    color: white;
+}
+
+    
+[role=contentinfo]{
+    background-color: rgba(70, 141, 60, 0.8);
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+    color: grey;
+    text-align: center;
+    margin-bottom: 0;
+
+}
+[role=contentinfo] :link{
+   font-family: Satisfy;
+   font-size: 25px;
+   margin-left: 0px;
+   text-decoration: none;
+   color: #ffffff
+}
+
+[role=contentinfo] :hover, :focus{
+    text-decoration: underline;
+}
+footer{
+    position: relative; 
+    background-color: #134347;
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+footer a:visited{
+    color: #ffffff;
+}
+
+footer a:hover{
+    color: gray;
+}
+
+footer a {
+    display: inline-block;
+    position: relative;
+    color: rgb(255, 255, 255);
+    
+}
+.zen-validate-html, .zen-validate-css, .zen-license, .zen-accessibility, .zen-github{
+    margin: 0 24px 0 24px;
+}
+
+.design-selection, .design-archives{
+    background-color: rgb(207, 235, 220);
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+    padding-left: 30px;
+    
+}
+
+.design-selection{
+    padding-left: 3em;
+    margin-top: 0;
+    font-size: 11px;
+  
+    
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+}
+
+.design-selection ul, .zen-resources ul {
+    margin: 0;
+}
+
+.design-selection li {
+    float: left;
+    width: 50%;
+    padding: 1.5em 10%;
+    border-top: solid 1px #c1ccc4;
+    color: #c0cac3;
+    
+}
+.design-selection ul::after{
+    
+    content: "";
+    clear: both;
+    display: table;
+    
+}
+
+.design-selection h3{
+    display: none
+}
+
+.design-archives{
+    padding: 1em;
+}
+.design-selection .design-name{
+    font-family: IBM Plex Mono;
+    color: black;
+    text-align: justify;
+   
+}
+.design-selection .designer-name{
+    font-family: IBM Plex Mono;
+    color:grey;
+    text-align: justify
+    
+}
+
+
+.zen-resources h3{
+    display: none;
+}
+.zen-resources a{
+    color: darkgreen;
+    font-family: IBM Plex Mono;
+    font-size: 11px
+}
+
+
+
+
+.zen-resources ul li {
+    float: left;
+    width: 50%;
+    padding: 1.5em 10%;
+    
+    
+}
+
+/* .zen-resources li:last-child {
+    float: none;
+    width: auto;
+    
+  } */
+
+.zen-resources ul{
+    content: "";
+    clear: both;
+    display: table;
+    margin: 0;
+}
+
+.design-archives {
+    padding: 1em;
+    padding-left: 3em;
+}
+
+.design-archives ul a {
+    color: grey;
+    font-family: IBM Plex Mono;
+    font-size: 11px;
+}
+
+.design-archives ul li {
+    float: left;
+    width: 50%;
+    border-top: solid 1px #c1ccc4;
+    padding: 1.5em 10%;
+}
+
+.design-archives ul::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.design-archives h3{
+    display: none;
+}
+
+
