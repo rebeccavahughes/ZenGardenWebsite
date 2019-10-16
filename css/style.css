@@ -38,6 +38,7 @@ h2 {
     background-repeat: no-repeat;
     background-size: contain;
     font-size: 15px;
+    background-position-x: 850px;
 }
 [role=article]{
     font-family: IBM Plex Mono;
@@ -211,7 +212,8 @@ ul{
 .zen-resources ul li {
     float: left;
     width: 50%;
-    padding: 1.5em 10%;
+    padding: 1em 10%;
+    padding-left: 220px;
     
     
 }
@@ -222,11 +224,10 @@ ul{
     
   } */
 
-.zen-resources ul{
+.zen-resources ul::after{
     content: "";
     clear: both;
     display: table;
-    margin: 0;
 }
 
 .design-archives {
