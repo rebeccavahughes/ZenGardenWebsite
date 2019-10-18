@@ -3,32 +3,36 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
 
+
 header{
     height: 230px;
-    padding: 20px 0 70px 0;
+    padding: 70px 0 70px 0;
     background-image: url(../img/huntington.png);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
     color: white;
+
 }
-*{
-    box-sizing: border-box;
-}
+
 
 a {
     text-decoration: none;
+    
 }
 .summary a, .preamble a, .explanation a, .participation a, .benefits a, .requirements a{
+    
     color: black
 }
 a:hover, a:focus{
     text-decoration: underline;
+    
 }
 
 h1{
     font-family: Roboto;
     text-shadow: 5px 5px black;
+    padding-bottom: 3vh;
     font-size: 50px
 }
 
@@ -38,7 +42,7 @@ h2 {
     background-repeat: no-repeat;
     background-size: contain;
     font-size: 15px;
-    background-position-x: 850px;
+    background-position: 44vw;
 }
 [role=article]{
     font-family: IBM Plex Mono;
@@ -46,7 +50,7 @@ h2 {
 }
 
 .requirements p, .benefits p, .explanation p, .preamble p, .summary p {
-    padding: 0 70px 0 70px;
+    padding: 15px 70px 0 70px;
 }
 
 
@@ -58,6 +62,7 @@ h3{
 }
 
 .summary, .preamble, .explanation{
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 .participation, .benefits, .zen-resources{
@@ -69,6 +74,13 @@ h3{
     
    
     
+}
+[title]:after{
+background: black
+}
+
+.requirements P{
+    padding-bottom: 25px;
 }
 .participation{
     padding: 3em;
@@ -85,6 +97,9 @@ h3{
     margin-bottom: 3em;
     color: white;
 }
+abbr[title] {
+    text-decoration: none;
+}
 
     
 [role=contentinfo]{
@@ -93,6 +108,7 @@ h3{
     background-size: auto, auto, cover;
     color: grey;
     text-align: center;
+    padding-top: 10vh;
     margin-bottom: 0;
 
 }
@@ -209,13 +225,26 @@ ul{
 
 
 
-.zen-resources ul li {
-    float: left;
+.zen-resources ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* width: 50%; */
+    /* float: left;
     width: 50%;
-    padding: 1em 10%;
-    padding-left: 220px;
+    padding: 1em 10%;*/
+    padding-left: 180px; 
+    height: 100px;
+
     
     
+}
+.zen-resources li{
+    
+    align-self: center;
+    padding-top: 15px;
+   padding-left: 6%;
+    width: 50%;
 }
 
 /* .zen-resources li:last-child {
@@ -224,11 +253,11 @@ ul{
     
   } */
 
-.zen-resources ul::after{
+/* .zen-resources ul::after{
     content: "";
     clear: both;
     display: table;
-}
+} */
 
 .design-archives {
     padding: 1em;
@@ -259,4 +288,7 @@ ul{
     display: none;
 }
 
-
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
